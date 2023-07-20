@@ -14,7 +14,7 @@ const Landing = (setSelectedPage) => {
       className='md:flex md:justify-between md:items-center md:h-full gap-16 py-10'
     >
       {/* IMAGE SECTION */}
-      <div className='md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-22'>
+      <div className='md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-12'>
         <motion.div
           initial='hidden'
           whileInView='visible'
@@ -103,7 +103,7 @@ const Landing = (setSelectedPage) => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.4, duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, x: -50 },
+            hidden: { opacity: 0, x: 50 },
             visible: { opacity: 1, x: 0 }
           }}
         >
