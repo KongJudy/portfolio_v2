@@ -7,6 +7,8 @@ import * as TbIcons from 'react-icons/tb';
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
+
+  /* LETTER ICONS FOR NAV LINKS */
   let iconComponent = null;
 
   if (page === 'Intro') {
@@ -54,7 +56,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* DESKTOP NAV */}
         {isAboveSmallScreens ? (
-          <div className='flex justify-between gap-12 font-ubuntu text-sm font-semibold text-white'>
+          <div className='flex justify-between gap-12 text-sm font-semibold text-white'>
             <Link
               page='Intro'
               selectedPage={selectedPage}

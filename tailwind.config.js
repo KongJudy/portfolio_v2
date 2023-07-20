@@ -10,6 +10,7 @@ module.exports = {
         purple: '#6c56e9',
         yellow: '#f8fa92',
         grey: '#ededed',
+        white: '#fff',
         'deep-blue': '#010026',
         'dark-grey': '#757575',
         'opaque-black': 'rgba(0, 0, 0, 0.35)'
@@ -26,6 +27,9 @@ module.exports = {
       }),
       fontFamily: {
         ubuntu: ['Ubuntu', 'sans-serif']
+      },
+      content: {
+        brush: "url('./assets/brush.png')"
       }
     },
     screens: {
