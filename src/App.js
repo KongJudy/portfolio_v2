@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react';
 import LineGradient from './components/LineGradient';
 import useMediaQuery from './hooks/useMediaQuery';
 import Navbar from './scenes/Navbar';
-import DotGroup from './scenes/DotGroup';
-import Landing from './scenes/Landing';
+import DotGroup from './features/DotGroup';
+import Intro from './scenes/Intro';
 import About from './scenes/About';
+import Skills from './scenes/Skills';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('intro');
@@ -35,11 +36,15 @@ function App() {
             setSelectedPage={setSelectedPage}
           />
         )}
-        <Landing setSelectedPage={setSelectedPage} />
+        <Intro setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient />
       <div className='w-5/6 mx-auto md:h-full'>
         <About />
+      </div>
+      <LineGradient />
+      <div className='w-5/6 mx-auto md:h-full'>
+        <Skills />
       </div>
     </div>
   );

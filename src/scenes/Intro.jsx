@@ -5,7 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import imageBorder from '../assets/profile-image.png';
 import image from '../assets/profile-img.png';
 
-const Landing = (setSelectedPage) => {
+const Intro = (setSelectedPage) => {
   const isAboveMedScreens = useMediaQuery('(min-width: 1060px)');
 
   return (
@@ -21,7 +21,7 @@ const Landing = (setSelectedPage) => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, x: 50 },
+            hidden: { opacity: 0, x: 150 },
             visible: { opacity: 1, x: 0 }
           }}
         >
@@ -67,34 +67,48 @@ const Landing = (setSelectedPage) => {
         </motion.div>
 
         {/* CALL TO ACTION */}
-        <motion.div
-          className='flex mt-5 justify-center md:justify-start'
-          initial='hidden'
-          whileInView='visible'
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 }
-          }}
-        >
-          <AnchorLink
-            className='bg-gradient-rainblue text-deep-blue rounded-md py-3 px-7 font-semibold hover:text-white transition duration-500'
-            onClick={() => setSelectedPage('contact')}
-            href='#contact'
+        <div className='flex mt-5 justify-center md:justify-start'>
+          <motion.div
+            className='flex mt-5 justify-center md:justify-start'
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -150 },
+              visible: { opacity: 1, x: 0 }
+            }}
           >
-            Contact Me
-          </AnchorLink>
-          <AnchorLink
-            className='rounded-md bg-gradient-rainbow2 py-0.5 hover:pr-0.5'
-            onClick={() => setSelectedPage('contact')}
-            href='#contact'
+            <AnchorLink
+              className='bg-gradient-rainblue text-deep-blue rounded-md py-3 px-7 font-semibold hover:text-white transition duration-500'
+              onClick={() => setSelectedPage('contact')}
+              href='#contact'
+            >
+              Contact Me
+            </AnchorLink>
+          </motion.div>
+          <motion.div
+            className='flex mt-5 justify-center md:justify-start'
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: 150 },
+              visible: { opacity: 1, x: 0 }
+            }}
           >
-            <div className='bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10'>
-              Let's talk.
-            </div>
-          </AnchorLink>
-        </motion.div>
+            <AnchorLink
+              className='rounded-md bg-gradient-rainbow2 py-0.5 hover:pr-0.5'
+              onClick={() => setSelectedPage('contact')}
+              href='#contact'
+            >
+              <div className='bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10'>
+                Let's talk.
+              </div>
+            </AnchorLink>
+          </motion.div>
+        </div>
 
         <motion.div
           className='flex mt-5 justify-center md:justify-start'
@@ -114,4 +128,4 @@ const Landing = (setSelectedPage) => {
   );
 };
 
-export default Landing;
+export default Intro;
