@@ -6,6 +6,8 @@ import DotGroup from './features/DotGroup';
 import Intro from './scenes/Intro';
 import About from './scenes/About';
 import Skills from './scenes/Skills';
+import Projects from './scenes/Projects';
+import Contact from './scenes/Contact';
 
 function App() {
   const [selectedPage, setSelectedPage] = useState('intro');
@@ -45,6 +47,14 @@ function App() {
       <LineGradient />
       <div className='w-5/6 mx-auto md:h-full'>
         <Skills />
+      </div>
+      <LineGradient />
+      <div className='w-5/6 mx-auto md:h-full'>
+        <Projects />
+      </div>
+      <LineGradient />
+      <div className='w-5/6 mx-auto md:h-full'>
+        <Contact />
       </div>
     </div>
   );

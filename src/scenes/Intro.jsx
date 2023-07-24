@@ -2,7 +2,6 @@ import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 import SocialMediaIcons from '../components/SocialMediaIcons';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import imageBorder from '../assets/profile-image.png';
 import image from '../assets/profile-img.png';
 
 const Intro = (setSelectedPage) => {
@@ -28,14 +27,14 @@ const Intro = (setSelectedPage) => {
           {isAboveMedScreens ? (
             <img
               alt='profile'
-              className='hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[200px] md:max-w-[400px]'
+              className='rounded-full hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[200px] md:max-w-[400px]'
               src={image}
             />
           ) : (
             <img
               alt='profile'
-              className='hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]'
-              src={imageBorder}
+              className='rounded-full hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]'
+              src={image}
             />
           )}
         </motion.div>
@@ -52,9 +51,9 @@ const Intro = (setSelectedPage) => {
             visible: { opacity: 1, x: 0 }
           }}
         >
-          <p className='text-6xl z-10 text-center md:text-start text-white'>
+          <p className='text-6xl font-semibold z-10 text-center md:text-start text-teal'>
             Judy{' '}
-            <span className='xs: relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[28px] before:-top-[76px] before:z-[-1]'>
+            <span className='xs: relative xs:text-purple xs:font-semibold z-20  before:absolute before:-left-[28px] before:-top-[76px] before:z-[-1]'>
               Kong
             </span>
           </p>
@@ -80,7 +79,7 @@ const Intro = (setSelectedPage) => {
             }}
           >
             <AnchorLink
-              className='bg-gradient-rainblue text-deep-blue rounded-md py-3 px-7 font-semibold hover:text-white transition duration-500'
+              className='bg-gradient-rainbow text-deep-blue rounded-md py-3 px-7 font-semibold hover:text-white transition duration-500 tracking-wider'
               onClick={() => setSelectedPage('contact')}
               href='#contact'
             >
@@ -99,11 +98,11 @@ const Intro = (setSelectedPage) => {
             }}
           >
             <AnchorLink
-              className='rounded-md bg-gradient-rainbow2 py-0.5 hover:pr-0.5'
+              className='rounded-md bg-gradient-rainbow py-0.5 hover:pr-0.5 tracking-wider'
               onClick={() => setSelectedPage('contact')}
               href='#contact'
             >
-              <div className='bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10'>
+              <div className='bg-deep-blue hover:text-teal transition duration-500 w-full h-full flex items-center justify-center px-10'>
                 Let's talk.
               </div>
             </AnchorLink>

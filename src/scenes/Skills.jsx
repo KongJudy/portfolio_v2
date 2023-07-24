@@ -12,21 +12,25 @@ const Skills = () => {
 
   return (
     <section id='skills' className='pt-10 pb-24'>
-      {/* SKILLS AND CERTIFICATES SECTION */}
+      {/* SKILLS */}
       <div className='md:flex md:justify-between md:gap-16 mt-32'>
         <motion.div
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
           variants={{
-            hidden: { opacity: 0, x: 50 },
-            visible: { opacity: 1, x: 0 }
+            hidden: { opacity: 0, y: -50 },
+            visible: { opacity: 1, y: 0 }
           }}
         >
-          <p className='font-semibold text-4xl mb-5'>
-            SKILLS <span className='text-red'>& Certificates</span>
-          </p>
-          <LineGradient width='w-1/3' />
+          <div>
+            <p className='font-semibold text-4xl mb-5 text-teal'>
+              SKILLS <span className='text-purple'>& Certificates</span>
+            </p>
+          </div>
+
+          <LineGradient width='w-[110px]' />
         </motion.div>
       </div>
 
@@ -39,10 +43,10 @@ const Skills = () => {
               initial='hidden'
               whileInView='visible'
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 3 }}
               variants={{
-                hidden: { opacity: 0, y: -50 },
-                visible: { opacity: 1, y: 0 }
+                hidden: { opacity: 0, x: -150 },
+                visible: { opacity: 1, x: 0 }
               }}
             >
               {data.icon}
@@ -55,10 +59,10 @@ const Skills = () => {
               initial='hidden'
               whileInView='visible'
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 3 }}
               variants={{
-                hidden: { opacity: 0, y: 50 },
-                visible: { opacity: 1, y: 0 }
+                hidden: { opacity: 0, x: 150 },
+                visible: { opacity: 1, x: 0 }
               }}
             >
               {data.icon}
@@ -101,7 +105,19 @@ const Skills = () => {
           ))}
         </div>
       )}
-      <CarouselFeature />
+      <motion.div
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 1 }}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 }
+        }}
+      >
+        {/* CERTIFICATES */}
+        <CarouselFeature />
+      </motion.div>
     </section>
   );
 };

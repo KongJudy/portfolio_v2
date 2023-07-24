@@ -20,20 +20,22 @@ const About = () => {
             visible: { opacity: 1, x: 0 }
           }}
         >
-          <p className='font-semibold text-4xl mb-5'>
-            ABOUT <span className='text-red'>ME</span>
+          <p className='font-semibold text-4xl mb-5 text-teal'>
+            ABOUT <span className='text-purple'>Me</span>
           </p>
-          <LineGradient width='w-1/3' />
-          <p className='mt-10 mb-7 text-white'>
+          <LineGradient width='w-[120px]' />
+          <p className='mt-10 mb-7 text-white text-xl'>
             I grew up in Elkins Park, PA, which is a suburb of Philadelphia.
             Currently, I reside in Willow Grove, PA. Initially, I pursued a
             degree in Graphic Design but eventually made the decision to
-            transition into the field of Baking as my profession. I completed my
-            education at the Art Institute of Philadelphia, obtaining a degree
-            in Baking and Pastry. After a few years, I took a break to reflect,
-            and during that time I discovered coding as a means of coping.
-            Presently, I reside with my spouse and share my home with a
-            dachshund named Jeenie.
+            transition into the field of Baking as my profession.
+          </p>
+          <p className='mt-10 mb-7 text-white text-xl'>
+            I completed my education at the Art Institute of Philadelphia,
+            obtaining a degree in Baking and Pastry. After a few years, I took a
+            break to reflect, and during that time I discovered coding as a
+            means of coping. Presently, I reside with my spouse and share my
+            home with a dachshund named Jeenie.
           </p>
         </motion.div>
 

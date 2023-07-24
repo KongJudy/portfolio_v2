@@ -1,4 +1,4 @@
-const color = '#f8fa92';
+const color = '#d4dba7';
 
 export const IconData = [
   {

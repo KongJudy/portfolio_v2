@@ -13,6 +13,6 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: #010026;
-  @apply text-teal;
+  background-color: #06002c;
+  @apply text-white;
 }
