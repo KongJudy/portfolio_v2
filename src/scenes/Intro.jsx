@@ -4,7 +4,7 @@ import SocialMediaIcons from '../components/SocialMediaIcons';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import image from '../assets/profile-img.png';
 
-const Intro = (setSelectedPage) => {
+const Intro = () => {
   const isAboveMedScreens = useMediaQuery('(min-width: 1060px)');
 
   return (
@@ -51,14 +51,14 @@ const Intro = (setSelectedPage) => {
             visible: { opacity: 1, x: 0 }
           }}
         >
-          <p className='text-6xl font-semibold z-10 text-center md:text-start text-teal'>
+          <p className='text-6xl font-semibold z-10 text-center md:text-start text-teal tracking-wider'>
             Judy{' '}
-            <span className='xs: relative xs:text-purple xs:font-semibold z-20  before:absolute before:-left-[28px] before:-top-[76px] before:z-[-1]'>
+            <span className='xs: relative xs:text-purple xs:font-semibold z-20  before:absolute before:-left-[28px] before:-top-[76px] before:z-[-1] tracking-wider'>
               Kong
             </span>
           </p>
 
-          <p className='mt-10 mb-7 text-lg text-center md:text-start'>
+          <p className='mt-10 mb-7 text-lg text-center md:text-start tracking-widest'>
             Hello! I'm Judy Kong, a recent graduate of Nucamp's Fullstack
             Development program—an exceptional online bootcamp. Welcome to my
             portfolio page!
@@ -80,7 +80,6 @@ const Intro = (setSelectedPage) => {
           >
             <AnchorLink
               className='bg-gradient-rainbow text-deep-blue rounded-md py-3 px-7 font-semibold hover:text-white transition duration-500 tracking-wider'
-              onClick={() => setSelectedPage('contact')}
               href='#contact'
             >
               Contact Me
@@ -98,11 +97,10 @@ const Intro = (setSelectedPage) => {
             }}
           >
             <AnchorLink
-              className='rounded-md bg-gradient-rainbow py-0.5 hover:pr-0.5 tracking-wider'
-              onClick={() => setSelectedPage('contact')}
+              className='rounded-md bg-gradient-rainbow py-0.5 hover:pr-0.5 tracking-widest'
               href='#contact'
             >
-              <div className='bg-deep-blue hover:text-teal transition duration-500 w-full h-full flex items-center justify-center px-10'>
+              <div className='bg-deep-blue hover:text-teal transition duration-500 w-full h-full flex items-center justify-center px-10 tracking-widest'>
                 Let's talk.
               </div>
             </AnchorLink>

@@ -2,6 +2,7 @@ import LineGradient from '../components/LineGradient';
 import { motion } from 'framer-motion';
 import BlogCard from '../features/BlogCard';
 import AppCard from '../features/AppCard';
+import ToDoCard from '../features/ToDoCard';
 
 const Projects = () => {
   return (
@@ -18,17 +19,17 @@ const Projects = () => {
         }}
       >
         <p className='font-semibold text-4xl text-teal'>
-          My <span className='text-purple'>PROJECTS</span>
+          My <span className='text-purple tracking-wider'>PROJECTS</span>
         </p>
         <div className='mt-5 ml-16'>
-          <LineGradient width='w-[164px]' />
+          <LineGradient width='w-[178px]' />
         </div>
       </motion.div>
 
       {/* PROJECTS */}
-      <div className='flex justify-between'>
+      <div className='flex justify-center'>
         <motion.div
-          className='sm:grid sm:grid-cols-3 mt-12 gap-6'
+          className='sm:grid sm:grid-cols-3 mt-10 gap-6'
           initial='hidden'
           whileInView='visible'
           viewport={{ once: true, amount: 0.5 }}
@@ -38,10 +39,13 @@ const Projects = () => {
             visible: { opacity: 1, x: 0 }
           }}
         >
-          <div>
+          <div className='mt-4'>
+            <ToDoCard />
+          </div>
+          <div className='mt-4'>
             <BlogCard />
           </div>
-          <div>
+          <div className='mt-4'>
             <AppCard />
           </div>
         </motion.div>

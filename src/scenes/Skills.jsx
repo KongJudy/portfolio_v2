@@ -25,12 +25,12 @@ const Skills = () => {
           }}
         >
           <div>
-            <p className='font-semibold text-4xl mb-5 text-teal'>
+            <p className='font-semibold text-4xl mb-5 text-teal tracking-wider'>
               SKILLS <span className='text-purple'>& Certificates</span>
             </p>
           </div>
 
-          <LineGradient width='w-[110px]' />
+          <LineGradient width='w-[114px]' />
         </motion.div>
       </div>
 

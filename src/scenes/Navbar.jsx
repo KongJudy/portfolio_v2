@@ -33,7 +33,7 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
     >
       <div className='flex flex-row'>
         <div className='mr-0.2 text-3xl'>{iconComponent}</div>
-        <div className='mt-1 justify-center justify-self-center'>
+        <div className='mt-1 justify-center justify-self-center tracking-wider'>
           {page.substring(1)}
         </div>
       </div>

@@ -38,7 +38,7 @@ function App() {
             setSelectedPage={setSelectedPage}
           />
         )}
-        <Intro setSelectedPage={setSelectedPage} />
+        <Intro />
       </div>
       <LineGradient />
       <div className='w-5/6 mx-auto md:h-full'>
