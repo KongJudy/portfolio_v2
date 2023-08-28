@@ -24,18 +24,25 @@ const About = () => {
             ABOUT <span className='text-purple'>Me</span>
           </p>
           <LineGradient width='w-[120px]' />
-          <p className='mt-10 mb-7 text-white text-xl tracking-wider'>
-            I grew up in Elkins Park, PA, which is a suburb of Philadelphia.
-            Currently, I reside in Willow Grove, PA. Initially, I pursued a
-            degree in Graphic Design but eventually made the decision to
-            transition into the field of Baking as my profession.
+          <p className='mt-10 mb-7 text-white text-md tracking-wider'>
+            I was born and raised in the suburbs of northeast Philadelphia by
+            two hard working parents. I grew up being curious of how to do
+            things that I saw. My passion for baking arose from watching lots of
+            baking/cooking shows. I went to the Art Institute of Philadelphia,
+            and graduated with a diploma in Baking and Pastry.
           </p>
-          <p className='mt-10 mb-7 text-white text-xl tracking-wider'>
-            I completed my education at the Art Institute of Philadelphia,
-            obtaining a degree in Baking and Pastry. After a few years, I took a
-            break to reflect, and discovered a new passion in coding. Presently,
-            I reside with my spouse and share my home with a dachshund named
-            Jeenie.
+          <p className='mt-10 mb-7 text-white text-md tracking-wider'>
+            I started an entry position at a Bakehouse associated with Whole
+            Foods Market. My eagerness for learning continued to where I would
+            put myself out there to learn as much as I could in different areas
+            of the Bakehouse. I was offered a promotion twice with my last
+            position title as Administistrative Assistent. My goal was to be a
+            valuable asset to where I could help the team grow.
+          </p>
+          <p className='mt-10 mb-7 text-white text-md tracking-wider'>
+            I developed a passion for coding and made the decision to go to an
+            online bootcamp called Nucamp. I am a graduate with a certificate of
+            completion for Full Stack Web Development.
           </p>
         </motion.div>
 
