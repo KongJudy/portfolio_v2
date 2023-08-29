@@ -38,7 +38,7 @@ const Skills = () => {
         <div className='text-white md:flex md:gap-4 mt-12'>
           {firstFiveIconData.map((data) => (
             <motion.div
-              key={data.key}
+              key={data.name}
               className='md:w-1/3 md:flex md:justify-center'
               initial='hidden'
               whileInView='visible'

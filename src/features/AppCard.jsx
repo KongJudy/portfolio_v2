@@ -28,7 +28,7 @@ const AppCard = () => {
       <div className='p-3 text-center'>
         <span className='text-deep-blue text-md font-bold'>Mobile App</span>
         <p className='text-deep-blue text-sm mt-2'>
-          Created using HTML, CSS, REACT NATIVE ...ETC.
+          Created using HTML, CSS, REACT NATIVE
         </p>
         <div className='mt-4 flex justify-end'>
           <a
