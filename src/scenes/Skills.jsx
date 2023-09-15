@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <section id='skills' className='pt-10 pb-24'>
       {/* SKILLS */}
-      <div className='md:flex md:justify-between md:gap-16 mt-32'>
+      <div className='md:flex md:justify-between md:gap-16 mt-20'>
         <motion.div
           initial='hidden'
           whileInView='visible'

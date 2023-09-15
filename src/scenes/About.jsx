@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section id='about' className='pt-10 pb-24'>
       {/* ABOUT AND IMAGE SECTION */}
-      <div className='md:flex md:justify-between gap-10 md:gap-18 mt-32'>
+      <div className='md:flex md:justify-between gap-10 md:gap-18 mt-20'>
         <motion.div
           className='md:w-2/3'
           initial='hidden'
@@ -24,14 +24,14 @@ const About = () => {
             ABOUT <span className='text-purple'>Me</span>
           </p>
           <LineGradient width='w-[120px]' />
-          <p className='mt-10 mb-7 text-white text-md tracking-wider'>
+          <p className='mt-4 mb-7 text-white text-md tracking-wider'>
             I was born and raised in the suburbs of northeast Philadelphia by
             two hard working parents. I grew up being curious of how to do
             things that I saw. My passion for baking arose from watching lots of
             baking/cooking shows. I went to the Art Institute of Philadelphia,
             and graduated with a diploma in Baking and Pastry.
           </p>
-          <p className='mt-10 mb-7 text-white text-md tracking-wider'>
+          <p className='mt-4 mb-7 text-white text-md tracking-wider'>
             I started an entry position at a Bakehouse associated with Whole
             Foods Market. My eagerness for learning continued to where I would
             put myself out there to learn as much as I could in different areas
@@ -39,7 +39,7 @@ const About = () => {
             position title as Administistrative Assistent. My goal was to be a
             valuable asset to where I could help the team grow.
           </p>
-          <p className='mt-10 mb-7 text-white text-md tracking-wider'>
+          <p className='mt-4 mb-7 text-white text-md tracking-wider'>
             I developed a passion for coding and made the decision to go to an
             online bootcamp called Nucamp. I am a graduate with a certificate of
             completion for Full Stack Web Development.
@@ -66,7 +66,7 @@ const About = () => {
             ) : (
               <img
                 alt='philadelphia'
-                className='rounded-lg border-yellow border-2 hover:filter hover:saturate-200 transition duration-500 z-10 w-full mt-10'
+                className='hidden'
                 src='https://c4.wallpaperflare.com/wallpaper/44/362/402/city-lights-reflection-reflected-cityscape-wallpaper-preview.jpg'
               />
             )}
