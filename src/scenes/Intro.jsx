@@ -59,8 +59,7 @@ const Intro = () => {
           </p>
 
           <p className='mt-10 mb-7 text-lg text-center md:text-start tracking-widest'>
-            Hello! I'm Judy Kong, a recent graduate of Nucamp's Fullstack
-            Development program—an exceptional online bootcamp. Welcome to my
+            Hello! I'm Judy Kong, a full-stack web developer. Welcome to my
             portfolio page!
           </p>
         </motion.div>
