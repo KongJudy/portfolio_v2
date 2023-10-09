@@ -1,6 +1,6 @@
 const ToDoCard = () => {
   const image = require('../assets/todo-app.png');
-  const demoLink = 'https://mern-todo-3d9h.onrender.com';
+  const demoLink = 'https://jk-mern-todo.vercel.app/';
 
   return (
     <div className='bg-white rounded-lg shadow-lg overflow-hidden border-yellow border-2'>
